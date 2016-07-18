@@ -1,0 +1,10 @@
+framework module ValidationKitiOS {
+  umbrella header "ValidationKitiOS.h"
+
+  export *
+  module * { export * }
+}
+
+module ValidationKitiOS.Swift {
+    header "ValidationKitiOS-Swift.h"
+}

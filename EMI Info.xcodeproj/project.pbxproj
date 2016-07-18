@@ -13,7 +13,6 @@
 		AC01DABE1D25965F004DB335 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01DABD1D25965F004DB335 /* TableViewDataSource.swift */; };
 		AC0AD07A1D1F8368003FFA71 /* EMITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0AD0791D1F8368003FFA71 /* EMITableViewController.swift */; };
 		AC0AD07C1D1F8678003FFA71 /* EMIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0AD07B1D1F8678003FFA71 /* EMIDetailViewController.swift */; };
-		AC10EFC71D2ECB7E00D5CD7E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10EFC61D2ECB7E00D5CD7E /* Validator.swift */; };
 		AC10EFC91D2ED4BB00D5CD7E /* RequiredValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10EFC81D2ED4BB00D5CD7E /* RequiredValidatorTests.swift */; };
 		AC1F40F71D2605C2005EA994 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1F40F61D2605C2005EA994 /* ConfigurableCell.swift */; };
 		AC20A3F71D2D5CA6005A6157 /* CreditCardColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20A3F61D2D5CA6005A6157 /* CreditCardColorViewController.swift */; };
@@ -35,30 +34,12 @@
 		AC6F63281D2D57D400C09CAD /* CreditCardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F63271D2D57D400C09CAD /* CreditCardPageViewController.swift */; };
 		AC7134BC1D3227F3007C2998 /* ValidatableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */; };
 		AC7134BE1D327C8C007C2998 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7134BD1D327C8C007C2998 /* UIColorExtension.swift */; };
-		AC71C4471D31A53D00077332 /* ValidatorChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71C4461D31A53D00077332 /* ValidatorChain.swift */; };
 		AC71C44B1D31A90600077332 /* ValidatorChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71C44A1D31A90600077332 /* ValidatorChainTests.swift */; };
-		AC71C44C1D31A90C00077332 /* ValidatorChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71C4461D31A53D00077332 /* ValidatorChain.swift */; };
-		AC7FDFFB1D308F39000C9C12 /* FailedValidationReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFA1D308F39000C9C12 /* FailedValidationReason.swift */; };
-		AC7FDFFD1D308F58000C9C12 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFC1D308F58000C9C12 /* ValidationResult.swift */; };
-		AC7FDFFF1D308F83000C9C12 /* RequiredValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFE1D308F83000C9C12 /* RequiredValidator.swift */; };
-		AC7FE0011D308FA4000C9C12 /* StringLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FE0001D308FA4000C9C12 /* StringLengthValidator.swift */; };
-		AC7FE0061D309042000C9C12 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10EFC61D2ECB7E00D5CD7E /* Validator.swift */; };
-		AC7FE0071D309042000C9C12 /* FailedValidationReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFA1D308F39000C9C12 /* FailedValidationReason.swift */; };
-		AC7FE0081D309042000C9C12 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFC1D308F58000C9C12 /* ValidationResult.swift */; };
-		AC7FE0091D309042000C9C12 /* RequiredValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFE1D308F83000C9C12 /* RequiredValidator.swift */; };
-		AC7FE00A1D309042000C9C12 /* StringLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FE0001D308FA4000C9C12 /* StringLengthValidator.swift */; };
-		AC80BE5C1D30F058002B0169 /* IntegerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE5B1D30F058002B0169 /* IntegerValidator.swift */; };
-		AC80BE5D1D30F0FE002B0169 /* IntegerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE5B1D30F058002B0169 /* IntegerValidator.swift */; };
-		AC80BE5F1D30F117002B0169 /* DecimalValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE5E1D30F117002B0169 /* DecimalValidator.swift */; };
-		AC80BE611D30F14E002B0169 /* AlphaNumericDashValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE601D30F14E002B0169 /* AlphaNumericDashValidator.swift */; };
+		AC7DDCEB1D3CC1FE005B0A39 /* ValidationKitiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7DDCEA1D3CC1FE005B0A39 /* ValidationKitiOS.framework */; };
 		AC80BE631D30F1A9002B0169 /* NameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE621D30F1A9002B0169 /* NameValidatorTests.swift */; };
-		AC80BE641D30F1C1002B0169 /* AlphaNumericDashValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE601D30F14E002B0169 /* AlphaNumericDashValidator.swift */; };
 		AC80BE661D30F1FD002B0169 /* IntegerValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE651D30F1FD002B0169 /* IntegerValidatorTests.swift */; };
-		AC80BE671D30F203002B0169 /* DecimalValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE5E1D30F117002B0169 /* DecimalValidator.swift */; };
 		AC80BE691D30F25E002B0169 /* DecimalValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE681D30F25E002B0169 /* DecimalValidatorTests.swift */; };
 		AC8207781D30950400988153 /* DigitsValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8207771D30950400988153 /* DigitsValidatorTests.swift */; };
-		AC82077A1D30DCF400988153 /* DigitsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8207791D30DCF400988153 /* DigitsValidator.swift */; };
-		AC82077B1D30DCF400988153 /* DigitsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8207791D30DCF400988153 /* DigitsValidator.swift */; };
 		AC8207D41D30EB4D00988153 /* EMI+FetchResultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8207D31D30EB4D00988153 /* EMI+FetchResultProvider.swift */; };
 		AC8D69211D197E3F00AA6985 /* ManagedObjectContextSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D69201D197E3F00AA6985 /* ManagedObjectContextSettable.swift */; };
 		AC8D69251D199D2600AA6985 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D69241D199D2600AA6985 /* StringExtension.swift */; };
@@ -103,7 +84,6 @@
 		AC01DABD1D25965F004DB335 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		AC0AD0791D1F8368003FFA71 /* EMITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMITableViewController.swift; sourceTree = "<group>"; };
 		AC0AD07B1D1F8678003FFA71 /* EMIDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMIDetailViewController.swift; sourceTree = "<group>"; };
-		AC10EFC61D2ECB7E00D5CD7E /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		AC10EFC81D2ED4BB00D5CD7E /* RequiredValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredValidatorTests.swift; sourceTree = "<group>"; };
 		AC1F40F61D2605C2005EA994 /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		AC20A3F61D2D5CA6005A6157 /* CreditCardColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardColorViewController.swift; sourceTree = "<group>"; };
@@ -121,20 +101,12 @@
 		AC6F63271D2D57D400C09CAD /* CreditCardPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardPageViewController.swift; sourceTree = "<group>"; };
 		AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatableTextField.swift; sourceTree = "<group>"; };
 		AC7134BD1D327C8C007C2998 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		AC71C4461D31A53D00077332 /* ValidatorChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorChain.swift; sourceTree = "<group>"; };
 		AC71C44A1D31A90600077332 /* ValidatorChainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorChainTests.swift; sourceTree = "<group>"; };
-		AC7FDFFA1D308F39000C9C12 /* FailedValidationReason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailedValidationReason.swift; sourceTree = "<group>"; };
-		AC7FDFFC1D308F58000C9C12 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
-		AC7FDFFE1D308F83000C9C12 /* RequiredValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredValidator.swift; sourceTree = "<group>"; };
-		AC7FE0001D308FA4000C9C12 /* StringLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLengthValidator.swift; sourceTree = "<group>"; };
-		AC80BE5B1D30F058002B0169 /* IntegerValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerValidator.swift; sourceTree = "<group>"; };
-		AC80BE5E1D30F117002B0169 /* DecimalValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalValidator.swift; sourceTree = "<group>"; };
-		AC80BE601D30F14E002B0169 /* AlphaNumericDashValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaNumericDashValidator.swift; sourceTree = "<group>"; };
+		AC7DDCEA1D3CC1FE005B0A39 /* ValidationKitiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ValidationKitiOS.framework; sourceTree = "<group>"; };
 		AC80BE621D30F1A9002B0169 /* NameValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameValidatorTests.swift; sourceTree = "<group>"; };
 		AC80BE651D30F1FD002B0169 /* IntegerValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerValidatorTests.swift; sourceTree = "<group>"; };
 		AC80BE681D30F25E002B0169 /* DecimalValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalValidatorTests.swift; sourceTree = "<group>"; };
 		AC8207771D30950400988153 /* DigitsValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitsValidatorTests.swift; sourceTree = "<group>"; };
-		AC8207791D30DCF400988153 /* DigitsValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitsValidator.swift; sourceTree = "<group>"; };
 		AC8207D31D30EB4D00988153 /* EMI+FetchResultProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EMI+FetchResultProvider.swift"; sourceTree = "<group>"; };
 		AC8D69201D197E3F00AA6985 /* ManagedObjectContextSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectContextSettable.swift; sourceTree = "<group>"; };
 		AC8D69241D199D2600AA6985 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -166,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7DDCEB1D3CC1FE005B0A39 /* ValidationKitiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,16 +162,6 @@
 		AC10EFC51D2ECA9E00D5CD7E /* Input Validators */ = {
 			isa = PBXGroup;
 			children = (
-				AC10EFC61D2ECB7E00D5CD7E /* Validator.swift */,
-				AC7FDFFA1D308F39000C9C12 /* FailedValidationReason.swift */,
-				AC7FDFFC1D308F58000C9C12 /* ValidationResult.swift */,
-				AC7FDFFE1D308F83000C9C12 /* RequiredValidator.swift */,
-				AC7FE0001D308FA4000C9C12 /* StringLengthValidator.swift */,
-				AC8207791D30DCF400988153 /* DigitsValidator.swift */,
-				AC80BE5B1D30F058002B0169 /* IntegerValidator.swift */,
-				AC80BE5E1D30F117002B0169 /* DecimalValidator.swift */,
-				AC80BE601D30F14E002B0169 /* AlphaNumericDashValidator.swift */,
-				AC71C4461D31A53D00077332 /* ValidatorChain.swift */,
 				AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */,
 			);
 			name = "Input Validators";
@@ -298,6 +261,7 @@
 		ACBF81941D197A110087D11B = {
 			isa = PBXGroup;
 			children = (
+				AC7DDCEA1D3CC1FE005B0A39 /* ValidationKitiOS.framework */,
 				ACBF819F1D197A110087D11B /* EMI Info */,
 				ACBF81B71D197A110087D11B /* EMI InfoTests */,
 				ACBF81C21D197A110087D11B /* EMI InfoUITests */,
@@ -505,40 +469,30 @@
 				AC01DABE1D25965F004DB335 /* TableViewDataSource.swift in Sources */,
 				AC5D2EBB1D1C2271009EEF78 /* CreditCardTableViewCell.swift in Sources */,
 				ACB714D51D29302600B2B6B2 /* CreditCardView.swift in Sources */,
-				AC82077A1D30DCF400988153 /* DigitsValidator.swift in Sources */,
 				ACA8C28E1D3AAA6100E90C10 /* CreditCardCollectionReusableView.swift in Sources */,
-				AC7FE0011D308FA4000C9C12 /* StringLengthValidator.swift in Sources */,
 				AC0AD07C1D1F8678003FFA71 /* EMIDetailViewController.swift in Sources */,
 				AC6F63281D2D57D400C09CAD /* CreditCardPageViewController.swift in Sources */,
 				AC8F486C1D2ABFB5007AE83F /* CreditCardCollectionViewController.swift in Sources */,
 				AC2993551D2509A600C54851 /* FetchedResultsDataProvider.swift in Sources */,
-				AC80BE5F1D30F117002B0169 /* DecimalValidator.swift in Sources */,
 				AC50CAC51D26B1B20074DB40 /* ConfiguredFetchResultProvider.swift in Sources */,
-				AC7FDFFF1D308F83000C9C12 /* RequiredValidator.swift in Sources */,
 				AC2EC3A91D280BBF00FA6895 /* EMI+CompletedMonths.swift in Sources */,
 				AC01DABA1D259590004DB335 /* DataProviderUpdate.swift in Sources */,
 				ACBF81A91D197A110087D11B /* EMI_Info.xcdatamodeld in Sources */,
 				AC50CAC71D26B1F50074DB40 /* FetchedResutsControllerProvider.swift in Sources */,
 				ACA8C28C1D3A997400E90C10 /* UIViewExtension.swift in Sources */,
-				AC80BE5C1D30F058002B0169 /* IntegerValidator.swift in Sources */,
 				AC7134BE1D327C8C007C2998 /* UIColorExtension.swift in Sources */,
 				AC01DABC1D2595BD004DB335 /* DataProviderDelegate.swift in Sources */,
 				ACBF81A11D197A110087D11B /* AppDelegate.swift in Sources */,
-				AC10EFC71D2ECB7E00D5CD7E /* Validator.swift in Sources */,
 				ACCE7DD11D221818004C839D /* EMITableViewCell.swift in Sources */,
 				AC3D7E011D22D0AC0022DF0E /* CreditCard+ConfiguredFetchResultProvider.swift in Sources */,
 				AC8D69251D199D2600AA6985 /* StringExtension.swift in Sources */,
 				AC8F486E1D2AC116007AE83F /* CreditCardCollectionViewCell.swift in Sources */,
 				AC8D69211D197E3F00AA6985 /* ManagedObjectContextSettable.swift in Sources */,
-				AC7FDFFD1D308F58000C9C12 /* ValidationResult.swift in Sources */,
-				AC71C4471D31A53D00077332 /* ValidatorChain.swift in Sources */,
-				AC80BE611D30F14E002B0169 /* AlphaNumericDashValidator.swift in Sources */,
 				AC2EC3A21D2804FE00FA6895 /* CoreDataStack.swift in Sources */,
 				AC7134BC1D3227F3007C2998 /* ValidatableTextField.swift in Sources */,
 				AC01DAB81D25955D004DB335 /* DataProvider.swift in Sources */,
 				AC8D69271D19B43B00AA6985 /* SegueHandlerType.swift in Sources */,
 				AC0AD07A1D1F8368003FFA71 /* EMITableViewController.swift in Sources */,
-				AC7FDFFB1D308F39000C9C12 /* FailedValidationReason.swift in Sources */,
 				AC8207D41D30EB4D00988153 /* EMI+FetchResultProvider.swift in Sources */,
 				AC1F40F71D2605C2005EA994 /* ConfigurableCell.swift in Sources */,
 				AC43EC191D2BED6600B51C37 /* CollectionViewDataSource.swift in Sources */,
@@ -551,28 +505,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC71C44B1D31A90600077332 /* ValidatorChainTests.swift in Sources */,
-				AC7FE0081D309042000C9C12 /* ValidationResult.swift in Sources */,
-				AC7FE0091D309042000C9C12 /* RequiredValidator.swift in Sources */,
-				AC80BE671D30F203002B0169 /* DecimalValidator.swift in Sources */,
 				AC2EC3AF1D28362E00FA6895 /* CreditCard+ActiveInstallments.swift in Sources */,
-				AC7FE0061D309042000C9C12 /* Validator.swift in Sources */,
 				AC2EC3AA1D280BCB00FA6895 /* EMI+CompletedMonths.swift in Sources */,
 				AC80BE631D30F1A9002B0169 /* NameValidatorTests.swift in Sources */,
-				AC80BE5D1D30F0FE002B0169 /* IntegerValidator.swift in Sources */,
 				AC10EFC91D2ED4BB00D5CD7E /* RequiredValidatorTests.swift in Sources */,
-				AC7FE00A1D309042000C9C12 /* StringLengthValidator.swift in Sources */,
 				AC80BE661D30F1FD002B0169 /* IntegerValidatorTests.swift in Sources */,
 				AC80BE691D30F25E002B0169 /* DecimalValidatorTests.swift in Sources */,
 				AC2EC3A51D28072400FA6895 /* EMI_Info.xcdatamodeld in Sources */,
 				ACF6217F1D2FDD7300FC06BB /* StringLengthValidatorTests.swift in Sources */,
-				AC80BE641D30F1C1002B0169 /* AlphaNumericDashValidator.swift in Sources */,
-				AC71C44C1D31A90C00077332 /* ValidatorChain.swift in Sources */,
 				AC2EC3A41D28070E00FA6895 /* EMITests.swift in Sources */,
 				AC8207781D30950400988153 /* DigitsValidatorTests.swift in Sources */,
 				AC2EC3AC1D28226100FA6895 /* CreditCardTests.swift in Sources */,
 				AC2EC3A61D28072C00FA6895 /* CoreDataStack.swift in Sources */,
-				AC7FE0071D309042000C9C12 /* FailedValidationReason.swift in Sources */,
-				AC82077B1D30DCF400988153 /* DigitsValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +658,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "EMI Info/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kivi.EMI-Info";
@@ -727,6 +675,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "EMI Info/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kivi.EMI-Info";

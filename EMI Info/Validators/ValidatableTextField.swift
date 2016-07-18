@@ -1,4 +1,5 @@
 import UIKit
+import ValidationKitiOS
 
 protocol ValidatableTextFieldDelegate: UITextFieldDelegate {
     func validatorChain(for textField: UITextField) -> ValidatorChain?

@@ -19,7 +19,7 @@ class EMITableViewCell: UITableViewCell, ConfigurableCell {
     
     func configure(for object: Object) {
         nameLabel.text = object.name
-        descriptionLabel.text = "\(object.completedMonths(till: Date())) of \(object.numberOfInstallments) months remaning"
+        descriptionLabel.text = "\(object.monthsRemaining(since: Date())) of \(object.numberOfInstallments) months remaning"
         amountLabel.text = currencyFormatter.string(from: object.monthlyInstallment!)!
     }
 }

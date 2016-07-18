@@ -1,5 +1,6 @@
 import UIKit
 import CoreData
+import ValidationKitiOS
 
 class CreditCardDetailViewController: UIViewController, SegueHandlerType, UIPageViewControllerDelegate, ManagedObjectContextConsumer {
     // MARK: SegueHandlerType

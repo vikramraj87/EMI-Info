@@ -1,5 +1,6 @@
 import UIKit
 import CoreData
+import ValidationKitiOS
 
 class EMIDetailViewController: UIViewController, ManagedObjectContextConsumer {
 
