@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vNI-8V-qCQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Credit Card Collection View Controller-->
+        <scene sceneID="FfF-PA-rR6">
+            <objects>
+                <collectionViewController id="0WL-A5-NMV" customClass="CreditCardCollectionViewController" customModule="EMI_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="PKn-G3-WO0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r7N-vc-bar">
+                            <size key="itemSize" width="300" height="189"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CreditCardCollectionViewCell" id="TgG-xa-ctW" customClass="CreditCardCollectionViewCell" customModule="EMI_Info" customModuleProvider="target">
+                                <frame key="frameInset" minX="38" minY="122" width="300" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="189"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-e1-Zi4" customClass="CreditCardView" customModule="EMI_Info" customModuleProvider="target">
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Lvw-FJ-kPO">
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="U01-Rq-AGz">
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLl-AI-ehK">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckr-F1-rwI">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iox-b3-Y24">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wnG-w6-0dT">
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sy4-6q-Zcd">
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Bill Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wQ-M7-G7R">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVY-Ah-JzE">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgf-hU-F89">
+                                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <connections>
+                                                                        <segue destination="NSy-t5-PUx" kind="show" identifier="CreditCardShowSegue" id="hhG-t9-44E"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="asM-tQ-0bx">
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total EMI" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MW-bY-c7g">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfW-ac-QM2">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="173" id="I86-hd-STe"/>
+                                                        <constraint firstAttribute="width" constant="284" id="Iku-Ib-tXc"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0039215686269999999" green="0.14901960780000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Lvw-FJ-kPO" firstAttribute="centerX" secondItem="trQ-e1-Zi4" secondAttribute="centerX" id="but-N4-SUG"/>
+                                                <constraint firstItem="Lvw-FJ-kPO" firstAttribute="centerY" secondItem="trQ-e1-Zi4" secondAttribute="centerY" id="mP1-Jh-z2F"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="trQ-e1-Zi4" secondAttribute="trailing" id="57D-Hi-Ap0"/>
+                                    <constraint firstItem="trQ-e1-Zi4" firstAttribute="top" secondItem="TgG-xa-ctW" secondAttribute="top" id="WV9-SV-xnA"/>
+                                    <constraint firstAttribute="bottom" secondItem="trQ-e1-Zi4" secondAttribute="bottom" id="kP6-eR-f5O"/>
+                                    <constraint firstItem="trQ-e1-Zi4" firstAttribute="leading" secondItem="TgG-xa-ctW" secondAttribute="leading" id="obn-eT-OHW"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="bankLabel" destination="Ckr-F1-rwI" id="hgX-NR-DIU"/>
+                                    <outlet property="billDayLabel" destination="sVY-Ah-JzE" id="qV8-GA-3Ng"/>
+                                    <outlet property="creditCardView" destination="trQ-e1-Zi4" id="3EX-FC-uxd"/>
+                                    <outlet property="nameLabel" destination="WLl-AI-ehK" id="Ygk-RV-5bb"/>
+                                    <outlet property="numberLabel" destination="iox-b3-Y24" id="ap4-Sp-H02"/>
+                                    <outlet property="sv" destination="Lvw-FJ-kPO" id="jQx-aP-lAh"/>
+                                    <outlet property="totalEMILabel" destination="WfW-ac-QM2" id="SfX-IY-Oxl"/>
+                                    <segue destination="GzO-w1-gmS" kind="show" identifier="CreditCardEMISegue" id="ZIg-hJ-wkI"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="GdY-cY-4rJ" customClass="CreditCardCollectionReusableView" customModule="EMI_Info" customModuleProvider="target">
+                            <frame key="frameInset" minY="64" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtc-ju-kZu">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="gtc-ju-kZu" firstAttribute="centerX" secondItem="GdY-cY-4rJ" secondAttribute="centerX" id="7Af-n0-0Ti"/>
+                                <constraint firstItem="gtc-ju-kZu" firstAttribute="centerY" secondItem="GdY-cY-4rJ" secondAttribute="centerY" id="XlS-mg-TdN"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="titleLabel" destination="gtc-ju-kZu" id="3wW-qi-NGC"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="0WL-A5-NMV" id="ybw-ys-kSv"/>
+                            <outlet property="delegate" destination="0WL-A5-NMV" id="Zt5-VK-QS8"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="eL2-1J-kte">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TXP-7W-iUa">
+                            <connections>
+                                <segue destination="NSy-t5-PUx" kind="show" identifier="CreditCardAddSegue" id="2yI-Xo-Hc3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCP-s5-Knn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="260"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="5Ux-Tj-pW1">
+            <objects>
+                <tableViewController id="GzO-w1-gmS" customClass="EMITableViewController" customModule="EMI_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WSh-Kv-5SI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EMITableViewCell" rowHeight="64" id="VYb-4c-0Av" customClass="EMITableViewCell" customModule="EMI_Info" customModuleProvider="target">
+                                <frame key="frameInset" minY="92" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VYb-4c-0Av" id="uEI-SR-XPD">
+                                    <frame key="frameInset" width="375" height="63"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6di-9l-7V4">
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maq-wK-KJc">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIr-Iy-zYR">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-De-85L">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ClA-De-85L" firstAttribute="trailing" secondItem="uEI-SR-XPD" secondAttribute="trailingMargin" id="Atj-iR-E2P"/>
+                                        <constraint firstAttribute="bottom" secondItem="6di-9l-7V4" secondAttribute="bottom" constant="8" id="KgG-oQ-YBo"/>
+                                        <constraint firstItem="6di-9l-7V4" firstAttribute="top" secondItem="uEI-SR-XPD" secondAttribute="top" constant="8" id="Kze-Wp-Rhb"/>
+                                        <constraint firstItem="6di-9l-7V4" firstAttribute="leading" secondItem="uEI-SR-XPD" secondAttribute="leading" constant="8" id="d2d-cM-QGg"/>
+                                        <constraint firstItem="ClA-De-85L" firstAttribute="centerY" secondItem="uEI-SR-XPD" secondAttribute="centerY" id="grH-5q-zvR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amountLabel" destination="ClA-De-85L" id="3NV-mc-wXR"/>
+                                    <outlet property="descriptionLabel" destination="kIr-Iy-zYR" id="t2L-LB-SCc"/>
+                                    <outlet property="nameLabel" destination="Maq-wK-KJc" id="C0m-pG-Blg"/>
+                                    <segue destination="nCe-x2-wlr" kind="show" identifier="UpdateEMISegue" id="uQv-8F-qbL">
+                                        <segue key="commit" inheritsFrom="parent" id="myO-z1-uDc"/>
+                                        <segue key="preview" inheritsFrom="commit" id="Nyn-bS-rGj"/>
+                                    </segue>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GzO-w1-gmS" id="QgB-dq-UsQ"/>
+                            <outlet property="delegate" destination="GzO-w1-gmS" id="SKJ-aT-S4G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qpm-zj-Y52">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="j99-Sc-4Zr">
+                            <connections>
+                                <segue destination="nCe-x2-wlr" kind="show" identifier="AddEMISegue" id="eKF-pj-3I6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8a-zS-Vu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829.5999999999999" y="259.52023988005999"/>
+        </scene>
+        <!--Credit Card Detail View Controller-->
+        <scene sceneID="o4l-4C-woS">
+            <objects>
+                <viewController id="NSy-t5-PUx" customClass="CreditCardDetailViewController" customModule="EMI_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ldy-a5-ZB3"/>
+                        <viewControllerLayoutGuide type="bottom" id="tJV-ss-jhV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mTP-3Q-SGK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gb-yd-gGP">
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p5W-5y-Tmc" userLabel="Content View">
+                                        <frame key="frameInset" width="375" height="460"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdW-n4-Sdb">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="316" id="BGE-f5-jMr"/>
+                                                    <constraint firstAttribute="height" constant="209" id="t87-tY-bmF"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="dMz-IQ-Uze" kind="embed" identifier="CreditCardPageViewControllerEmbedSegue" id="JpB-NV-bfb"/>
+                                                </connections>
+                                            </containerView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Eqf-96-mcR">
+                                                <frame key="frameInset" minX="30" minY="270" width="316" height="144"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name (for identifying the card)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Thf-kc-e6o">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="NSy-t5-PUx" id="LLk-sh-ada"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nrk-gy-Zvq">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="NSy-t5-PUx" id="NZI-Lt-iaN"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last four numbers of card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWf-by-R3C">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="NSy-t5-PUx" id="bFe-Li-QQa"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill day of every month. Eg: 18" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tbo-hn-BBY">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="NSy-t5-PUx" id="9PM-zX-Rvj"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mN0-33-4BN">
+                                                        <frame key="frameInset" minY="144" width="316"/>
+                                                        <state key="normal" title="Delete"/>
+                                                        <connections>
+                                                            <action selector="deleteCreditCard:" destination="NSy-t5-PUx" eventType="touchUpInside" id="TnM-bg-e3x"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="9Eo-L2-Q8Y">
+                                                <color key="pageIndicatorTintColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="currentPageIndicatorTintColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </pageControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="wdW-n4-Sdb" firstAttribute="top" secondItem="p5W-5y-Tmc" secondAttribute="top" constant="8" id="SEy-KL-x3L"/>
+                                            <constraint firstItem="wdW-n4-Sdb" firstAttribute="centerX" secondItem="p5W-5y-Tmc" secondAttribute="centerX" id="SIC-ua-lsz"/>
+                                            <constraint firstItem="9Eo-L2-Q8Y" firstAttribute="top" secondItem="wdW-n4-Sdb" secondAttribute="bottom" id="Sac-X1-9Ku"/>
+                                            <constraint firstItem="Eqf-96-mcR" firstAttribute="centerX" secondItem="p5W-5y-Tmc" secondAttribute="centerX" id="UFO-Nd-yRI"/>
+                                            <constraint firstAttribute="bottom" secondItem="Eqf-96-mcR" secondAttribute="bottom" constant="8" id="ZW3-yr-pFU"/>
+                                            <constraint firstItem="Eqf-96-mcR" firstAttribute="width" secondItem="wdW-n4-Sdb" secondAttribute="width" id="bUg-ip-fDH"/>
+                                            <constraint firstItem="9Eo-L2-Q8Y" firstAttribute="centerX" secondItem="p5W-5y-Tmc" secondAttribute="centerX" id="nUv-5z-6Vp"/>
+                                            <constraint firstItem="Eqf-96-mcR" firstAttribute="top" secondItem="9Eo-L2-Q8Y" secondAttribute="bottom" constant="16" id="xgK-yZ-m0u"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="OXM-9m-c86" appends="YES" id="Z4T-9W-Tgg"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="p5W-5y-Tmc" firstAttribute="top" secondItem="5gb-yd-gGP" secondAttribute="top" id="Inv-pq-2G2"/>
+                                    <constraint firstItem="p5W-5y-Tmc" firstAttribute="leading" secondItem="5gb-yd-gGP" secondAttribute="leading" id="Sh1-Nd-PPm"/>
+                                    <constraint firstAttribute="bottom" secondItem="p5W-5y-Tmc" secondAttribute="bottom" id="e8a-aD-MBU"/>
+                                    <constraint firstAttribute="trailing" secondItem="p5W-5y-Tmc" secondAttribute="trailing" id="zvX-mS-dHH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5gb-yd-gGP" secondAttribute="trailing" id="KyB-Md-Irb"/>
+                            <constraint firstItem="p5W-5y-Tmc" firstAttribute="width" secondItem="mTP-3Q-SGK" secondAttribute="width" id="drR-lg-sIk"/>
+                            <constraint firstItem="5gb-yd-gGP" firstAttribute="top" secondItem="mTP-3Q-SGK" secondAttribute="top" id="h1N-aK-Eaj"/>
+                            <constraint firstItem="tJV-ss-jhV" firstAttribute="top" secondItem="5gb-yd-gGP" secondAttribute="bottom" id="h9i-qh-dj9"/>
+                            <constraint firstItem="5gb-yd-gGP" firstAttribute="leading" secondItem="mTP-3Q-SGK" secondAttribute="leading" id="tzK-IO-Hzq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ya5-5c-VpX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="YsC-Zh-1Bv">
+                            <connections>
+                                <action selector="saveCreditCard:" destination="NSy-t5-PUx" id="7HL-27-2ep"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bankTextField" destination="Nrk-gy-Zvq" id="C6J-8y-A20"/>
+                        <outlet property="billDayTextField" destination="Tbo-hn-BBY" id="Xge-ix-m7O"/>
+                        <outlet property="deleteButton" destination="mN0-33-4BN" id="PcM-HC-7s0"/>
+                        <outlet property="lastFourNumbersTextField" destination="RWf-by-R3C" id="CTx-nw-jNy"/>
+                        <outlet property="nameTextField" destination="Thf-kc-e6o" id="cbP-g4-32W"/>
+                        <outlet property="pageControl" destination="9Eo-L2-Q8Y" id="urU-Bb-x6d"/>
+                        <outlet property="scrollView" destination="5gb-yd-gGP" id="E8Q-8e-nAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YkJ-BD-Smf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OXM-9m-c86">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="NSy-t5-PUx" id="NYa-Gs-urB"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="247" y="1013"/>
+        </scene>
+        <!--Credit Card Page View Controller-->
+        <scene sceneID="a9Y-Xk-5Wm">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dMz-IQ-Uze" customClass="CreditCardPageViewController" customModule="EMI_Info" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoS-2e-M46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="806"/>
+        </scene>
+        <!--Credit Card Color View Controller-->
+        <scene sceneID="yqd-G4-KvI">
+            <objects>
+                <viewController storyboardIdentifier="CreditCardColorViewController" id="X5V-sp-FlO" customClass="CreditCardColorViewController" customModule="EMI_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nSh-gd-Mag"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hxg-xF-EKT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5jK-nO-9Dd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBz-cH-87p" customClass="CreditCardView" customModule="EMI_Info" customModuleProvider="target">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Uhn-So-jgQ">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aBA-Xj-Wz2">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CU7-II-MwQ">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfl-GD-nl6">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qm8-PM-pT8">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bkm-aO-DOX">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAG-g3-tOz">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wep-fN-PtF">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Uhn-So-jgQ" firstAttribute="top" secondItem="KBz-cH-87p" secondAttribute="top" constant="8" id="RfY-wP-ahH"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uhn-So-jgQ" secondAttribute="bottom" constant="8" id="VFw-qd-tRF"/>
+                                    <constraint firstAttribute="width" constant="300" id="VNj-5K-6ab"/>
+                                    <constraint firstAttribute="height" constant="189" id="a48-hC-qMN"/>
+                                    <constraint firstItem="Uhn-So-jgQ" firstAttribute="leading" secondItem="KBz-cH-87p" secondAttribute="leading" constant="8" id="d4F-Va-bMS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uhn-So-jgQ" secondAttribute="trailing" constant="8" id="l2C-Ox-Iok"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KBz-cH-87p" firstAttribute="top" secondItem="nSh-gd-Mag" secondAttribute="bottom" constant="8" id="2eo-F5-v9v"/>
+                            <constraint firstItem="KBz-cH-87p" firstAttribute="centerX" secondItem="5jK-nO-9Dd" secondAttribute="centerX" id="8MW-CS-dJC"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="bankLabel" destination="wfl-GD-nl6" id="rPY-G5-jhP"/>
+                        <outlet property="billDayLabel" destination="Wep-fN-PtF" id="e29-iF-w8d"/>
+                        <outlet property="creditCardView" destination="KBz-cH-87p" id="DJd-yR-2cp"/>
+                        <outlet property="lastFourNumbersLabel" destination="Qm8-PM-pT8" id="YZT-SV-Wqn"/>
+                        <outlet property="nameLabel" destination="CU7-II-MwQ" id="eF8-JQ-xvD"/>
+                        <outlet property="stackView" destination="Uhn-So-jgQ" id="a5O-ay-zlC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpj-Xt-4UT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="1013"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="DP3-hi-1Sn">
+            <objects>
+                <viewController id="nCe-x2-wlr" customClass="EMIDetailViewController" customModule="EMI_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MlR-r9-aR6"/>
+                        <viewControllerLayoutGuide type="bottom" id="yjA-Yb-YUR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VgH-6U-i9S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wUa-oE-NKC">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="smR-v7-75o">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Monthly Installment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDt-zi-AOh">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Installments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5G-Ui-JVJ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMI Start Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dv-Tt-1Im">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="0Dv-Tt-1Im" firstAttribute="top" secondItem="wUa-oE-NKC" secondAttribute="bottom" constant="20" id="V95-Vv-YBp"/>
+                            <constraint firstItem="wUa-oE-NKC" firstAttribute="top" secondItem="MlR-r9-aR6" secondAttribute="bottom" constant="8" id="X22-Dh-3Yv"/>
+                            <constraint firstItem="wUa-oE-NKC" firstAttribute="leading" secondItem="VgH-6U-i9S" secondAttribute="leadingMargin" id="aAm-3J-5aO"/>
+                            <constraint firstItem="0Dv-Tt-1Im" firstAttribute="leading" secondItem="VgH-6U-i9S" secondAttribute="leadingMargin" id="ewg-3g-oSh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wUa-oE-NKC" secondAttribute="trailing" id="n41-OV-CZd"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3zm-WD-aZw" appends="YES" id="VsI-1h-gou"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="EwC-td-eaU"/>
+                    <connections>
+                        <outlet property="amountTextField" destination="DDt-zi-AOh" id="r2y-BM-IES"/>
+                        <outlet property="emiStartDateLabel" destination="0Dv-Tt-1Im" id="KI3-Fy-0l3"/>
+                        <outlet property="monthsTextField" destination="X5G-Ui-JVJ" id="9j1-WC-tYu"/>
+                        <outlet property="nameTextField" destination="smR-v7-75o" id="utk-Dv-XQD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VyQ-yQ-Ijd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3zm-WD-aZw">
+                    <connections>
+                        <action selector="viewDidTapped:" destination="nCe-x2-wlr" id="PRG-PZ-5qV"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1830" y="1014"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j4z-Td-W17">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vNI-8V-qCQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="biL-zn-PKw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0WL-A5-NMV" kind="relationship" relationship="rootViewController" id="fob-jW-bNi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="shx-cD-z1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="260"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uQv-8F-qbL"/>
+        <segue reference="hhG-t9-44E"/>
+    </inferredMetricsTieBreakers>
+</document>

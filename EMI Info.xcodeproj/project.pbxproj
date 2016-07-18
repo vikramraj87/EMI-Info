@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC01DAB81D25955D004DB335 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01DAB71D25955D004DB335 /* DataProvider.swift */; };
+		AC01DABA1D259590004DB335 /* DataProviderUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01DAB91D259590004DB335 /* DataProviderUpdate.swift */; };
+		AC01DABC1D2595BD004DB335 /* DataProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01DABB1D2595BD004DB335 /* DataProviderDelegate.swift */; };
+		AC01DABE1D25965F004DB335 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01DABD1D25965F004DB335 /* TableViewDataSource.swift */; };
+		AC0AD07A1D1F8368003FFA71 /* EMITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0AD0791D1F8368003FFA71 /* EMITableViewController.swift */; };
+		AC0AD07C1D1F8678003FFA71 /* EMIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0AD07B1D1F8678003FFA71 /* EMIDetailViewController.swift */; };
+		AC10EFC71D2ECB7E00D5CD7E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10EFC61D2ECB7E00D5CD7E /* Validator.swift */; };
+		AC10EFC91D2ED4BB00D5CD7E /* RequiredValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10EFC81D2ED4BB00D5CD7E /* RequiredValidatorTests.swift */; };
+		AC1F40F71D2605C2005EA994 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1F40F61D2605C2005EA994 /* ConfigurableCell.swift */; };
+		AC20A3F71D2D5CA6005A6157 /* CreditCardColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20A3F61D2D5CA6005A6157 /* CreditCardColorViewController.swift */; };
+		AC2993551D2509A600C54851 /* FetchedResultsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2993541D2509A600C54851 /* FetchedResultsDataProvider.swift */; };
+		AC2EC3A21D2804FE00FA6895 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EC3A11D2804FE00FA6895 /* CoreDataStack.swift */; };
+		AC2EC3A41D28070E00FA6895 /* EMITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EC3A31D28070E00FA6895 /* EMITests.swift */; };
+		AC2EC3A51D28072400FA6895 /* EMI_Info.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACBF81A71D197A110087D11B /* EMI_Info.xcdatamodeld */; };
+		AC2EC3A61D28072C00FA6895 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EC3A11D2804FE00FA6895 /* CoreDataStack.swift */; };
+		AC2EC3A91D280BBF00FA6895 /* EMI+CompletedMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EC3A81D280BBF00FA6895 /* EMI+CompletedMonths.swift */; };
+		AC2EC3AA1D280BCB00FA6895 /* EMI+CompletedMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EC3A81D280BBF00FA6895 /* EMI+CompletedMonths.swift */; };
+		AC2EC3AC1D28226100FA6895 /* CreditCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EC3AB1D28226100FA6895 /* CreditCardTests.swift */; };
+		AC2EC3AE1D28230300FA6895 /* CreditCard+ActiveInstallments.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EC3AD1D28230300FA6895 /* CreditCard+ActiveInstallments.swift */; };
+		AC2EC3AF1D28362E00FA6895 /* CreditCard+ActiveInstallments.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EC3AD1D28230300FA6895 /* CreditCard+ActiveInstallments.swift */; };
+		AC3D7E011D22D0AC0022DF0E /* CreditCard+ConfiguredFetchResultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D7E001D22D0AC0022DF0E /* CreditCard+ConfiguredFetchResultProvider.swift */; };
+		AC43EC191D2BED6600B51C37 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43EC181D2BED6600B51C37 /* CollectionViewDataSource.swift */; };
+		AC50CAC51D26B1B20074DB40 /* ConfiguredFetchResultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50CAC41D26B1B20074DB40 /* ConfiguredFetchResultProvider.swift */; };
+		AC50CAC71D26B1F50074DB40 /* FetchedResutsControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50CAC61D26B1F50074DB40 /* FetchedResutsControllerProvider.swift */; };
+		AC5D2EBB1D1C2271009EEF78 /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D2EBA1D1C2271009EEF78 /* CreditCardTableViewCell.swift */; };
+		AC6F63281D2D57D400C09CAD /* CreditCardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F63271D2D57D400C09CAD /* CreditCardPageViewController.swift */; };
+		AC7134BC1D3227F3007C2998 /* ValidatableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */; };
+		AC7134BE1D327C8C007C2998 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7134BD1D327C8C007C2998 /* UIColorExtension.swift */; };
+		AC71C4471D31A53D00077332 /* ValidatorChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71C4461D31A53D00077332 /* ValidatorChain.swift */; };
+		AC71C44B1D31A90600077332 /* ValidatorChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71C44A1D31A90600077332 /* ValidatorChainTests.swift */; };
+		AC71C44C1D31A90C00077332 /* ValidatorChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71C4461D31A53D00077332 /* ValidatorChain.swift */; };
+		AC7FDFFB1D308F39000C9C12 /* FailedValidationReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFA1D308F39000C9C12 /* FailedValidationReason.swift */; };
+		AC7FDFFD1D308F58000C9C12 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFC1D308F58000C9C12 /* ValidationResult.swift */; };
+		AC7FDFFF1D308F83000C9C12 /* RequiredValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFE1D308F83000C9C12 /* RequiredValidator.swift */; };
+		AC7FE0011D308FA4000C9C12 /* StringLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FE0001D308FA4000C9C12 /* StringLengthValidator.swift */; };
+		AC7FE0061D309042000C9C12 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10EFC61D2ECB7E00D5CD7E /* Validator.swift */; };
+		AC7FE0071D309042000C9C12 /* FailedValidationReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFA1D308F39000C9C12 /* FailedValidationReason.swift */; };
+		AC7FE0081D309042000C9C12 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFC1D308F58000C9C12 /* ValidationResult.swift */; };
+		AC7FE0091D309042000C9C12 /* RequiredValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FDFFE1D308F83000C9C12 /* RequiredValidator.swift */; };
+		AC7FE00A1D309042000C9C12 /* StringLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FE0001D308FA4000C9C12 /* StringLengthValidator.swift */; };
+		AC80BE5C1D30F058002B0169 /* IntegerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE5B1D30F058002B0169 /* IntegerValidator.swift */; };
+		AC80BE5D1D30F0FE002B0169 /* IntegerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE5B1D30F058002B0169 /* IntegerValidator.swift */; };
+		AC80BE5F1D30F117002B0169 /* DecimalValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE5E1D30F117002B0169 /* DecimalValidator.swift */; };
+		AC80BE611D30F14E002B0169 /* AlphaNumericDashValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE601D30F14E002B0169 /* AlphaNumericDashValidator.swift */; };
+		AC80BE631D30F1A9002B0169 /* NameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE621D30F1A9002B0169 /* NameValidatorTests.swift */; };
+		AC80BE641D30F1C1002B0169 /* AlphaNumericDashValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE601D30F14E002B0169 /* AlphaNumericDashValidator.swift */; };
+		AC80BE661D30F1FD002B0169 /* IntegerValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE651D30F1FD002B0169 /* IntegerValidatorTests.swift */; };
+		AC80BE671D30F203002B0169 /* DecimalValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE5E1D30F117002B0169 /* DecimalValidator.swift */; };
+		AC80BE691D30F25E002B0169 /* DecimalValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE681D30F25E002B0169 /* DecimalValidatorTests.swift */; };
+		AC8207781D30950400988153 /* DigitsValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8207771D30950400988153 /* DigitsValidatorTests.swift */; };
+		AC82077A1D30DCF400988153 /* DigitsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8207791D30DCF400988153 /* DigitsValidator.swift */; };
+		AC82077B1D30DCF400988153 /* DigitsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8207791D30DCF400988153 /* DigitsValidator.swift */; };
+		AC8207D41D30EB4D00988153 /* EMI+FetchResultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8207D31D30EB4D00988153 /* EMI+FetchResultProvider.swift */; };
+		AC8D69211D197E3F00AA6985 /* ManagedObjectContextSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D69201D197E3F00AA6985 /* ManagedObjectContextSettable.swift */; };
+		AC8D69251D199D2600AA6985 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D69241D199D2600AA6985 /* StringExtension.swift */; };
+		AC8D69271D19B43B00AA6985 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D69261D19B43B00AA6985 /* SegueHandlerType.swift */; };
+		AC8F486C1D2ABFB5007AE83F /* CreditCardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F486B1D2ABFB5007AE83F /* CreditCardCollectionViewController.swift */; };
+		AC8F486E1D2AC116007AE83F /* CreditCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F486D1D2AC116007AE83F /* CreditCardCollectionViewCell.swift */; };
+		ACA8C28C1D3A997400E90C10 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8C28B1D3A997400E90C10 /* UIViewExtension.swift */; };
+		ACA8C28E1D3AAA6100E90C10 /* CreditCardCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8C28D1D3AAA6100E90C10 /* CreditCardCollectionReusableView.swift */; };
+		ACB714D51D29302600B2B6B2 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB714D41D29302600B2B6B2 /* CreditCardView.swift */; };
+		ACBF81A11D197A110087D11B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF81A01D197A110087D11B /* AppDelegate.swift */; };
+		ACBF81A61D197A110087D11B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBF81A41D197A110087D11B /* Main.storyboard */; };
+		ACBF81A91D197A110087D11B /* EMI_Info.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACBF81A71D197A110087D11B /* EMI_Info.xcdatamodeld */; };
+		ACBF81AB1D197A110087D11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF81AA1D197A110087D11B /* Assets.xcassets */; };
+		ACBF81AE1D197A110087D11B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBF81AC1D197A110087D11B /* LaunchScreen.storyboard */; };
+		ACCCDE9B1D3BF1F600A10C58 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCDE9A1D3BF1F600A10C58 /* Formatters.swift */; };
+		ACCDFB761D2D93A100368D09 /* CreditCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDFB751D2D93A100368D09 /* CreditCardDetailViewController.swift */; };
+		ACCE7DD11D221818004C839D /* EMITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCE7DD01D221818004C839D /* EMITableViewCell.swift */; };
+		ACF6217F1D2FDD7300FC06BB /* StringLengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6217E1D2FDD7300FC06BB /* StringLengthValidatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACBF81B51D197A110087D11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBF81951D197A110087D11B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBF819C1D197A110087D11B;
+			remoteInfo = "EMI Info";
+		};
+		ACBF81C01D197A110087D11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBF81951D197A110087D11B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBF819C1D197A110087D11B;
+			remoteInfo = "EMI Info";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC01DAB71D25955D004DB335 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		AC01DAB91D259590004DB335 /* DataProviderUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderUpdate.swift; sourceTree = "<group>"; };
+		AC01DABB1D2595BD004DB335 /* DataProviderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderDelegate.swift; sourceTree = "<group>"; };
+		AC01DABD1D25965F004DB335 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		AC0AD0791D1F8368003FFA71 /* EMITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMITableViewController.swift; sourceTree = "<group>"; };
+		AC0AD07B1D1F8678003FFA71 /* EMIDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMIDetailViewController.swift; sourceTree = "<group>"; };
+		AC10EFC61D2ECB7E00D5CD7E /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		AC10EFC81D2ED4BB00D5CD7E /* RequiredValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredValidatorTests.swift; sourceTree = "<group>"; };
+		AC1F40F61D2605C2005EA994 /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		AC20A3F61D2D5CA6005A6157 /* CreditCardColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardColorViewController.swift; sourceTree = "<group>"; };
+		AC2993541D2509A600C54851 /* FetchedResultsDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsDataProvider.swift; sourceTree = "<group>"; };
+		AC2EC3A11D2804FE00FA6895 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		AC2EC3A31D28070E00FA6895 /* EMITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMITests.swift; sourceTree = "<group>"; };
+		AC2EC3A81D280BBF00FA6895 /* EMI+CompletedMonths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EMI+CompletedMonths.swift"; sourceTree = "<group>"; };
+		AC2EC3AB1D28226100FA6895 /* CreditCardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardTests.swift; sourceTree = "<group>"; };
+		AC2EC3AD1D28230300FA6895 /* CreditCard+ActiveInstallments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CreditCard+ActiveInstallments.swift"; sourceTree = "<group>"; };
+		AC3D7E001D22D0AC0022DF0E /* CreditCard+ConfiguredFetchResultProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CreditCard+ConfiguredFetchResultProvider.swift"; sourceTree = "<group>"; };
+		AC43EC181D2BED6600B51C37 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		AC50CAC41D26B1B20074DB40 /* ConfiguredFetchResultProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguredFetchResultProvider.swift; sourceTree = "<group>"; };
+		AC50CAC61D26B1F50074DB40 /* FetchedResutsControllerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResutsControllerProvider.swift; sourceTree = "<group>"; };
+		AC5D2EBA1D1C2271009EEF78 /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
+		AC6F63271D2D57D400C09CAD /* CreditCardPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardPageViewController.swift; sourceTree = "<group>"; };
+		AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatableTextField.swift; sourceTree = "<group>"; };
+		AC7134BD1D327C8C007C2998 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		AC71C4461D31A53D00077332 /* ValidatorChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorChain.swift; sourceTree = "<group>"; };
+		AC71C44A1D31A90600077332 /* ValidatorChainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorChainTests.swift; sourceTree = "<group>"; };
+		AC7FDFFA1D308F39000C9C12 /* FailedValidationReason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailedValidationReason.swift; sourceTree = "<group>"; };
+		AC7FDFFC1D308F58000C9C12 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		AC7FDFFE1D308F83000C9C12 /* RequiredValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredValidator.swift; sourceTree = "<group>"; };
+		AC7FE0001D308FA4000C9C12 /* StringLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLengthValidator.swift; sourceTree = "<group>"; };
+		AC80BE5B1D30F058002B0169 /* IntegerValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerValidator.swift; sourceTree = "<group>"; };
+		AC80BE5E1D30F117002B0169 /* DecimalValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalValidator.swift; sourceTree = "<group>"; };
+		AC80BE601D30F14E002B0169 /* AlphaNumericDashValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaNumericDashValidator.swift; sourceTree = "<group>"; };
+		AC80BE621D30F1A9002B0169 /* NameValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameValidatorTests.swift; sourceTree = "<group>"; };
+		AC80BE651D30F1FD002B0169 /* IntegerValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerValidatorTests.swift; sourceTree = "<group>"; };
+		AC80BE681D30F25E002B0169 /* DecimalValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalValidatorTests.swift; sourceTree = "<group>"; };
+		AC8207771D30950400988153 /* DigitsValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitsValidatorTests.swift; sourceTree = "<group>"; };
+		AC8207791D30DCF400988153 /* DigitsValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitsValidator.swift; sourceTree = "<group>"; };
+		AC8207D31D30EB4D00988153 /* EMI+FetchResultProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EMI+FetchResultProvider.swift"; sourceTree = "<group>"; };
+		AC8D69201D197E3F00AA6985 /* ManagedObjectContextSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectContextSettable.swift; sourceTree = "<group>"; };
+		AC8D69241D199D2600AA6985 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		AC8D69261D19B43B00AA6985 /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		AC8F486B1D2ABFB5007AE83F /* CreditCardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionViewController.swift; sourceTree = "<group>"; };
+		AC8F486D1D2AC116007AE83F /* CreditCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		ACA8C28B1D3A997400E90C10 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		ACA8C28D1D3AAA6100E90C10 /* CreditCardCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionReusableView.swift; sourceTree = "<group>"; };
+		ACB714D41D29302600B2B6B2 /* CreditCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		ACBF819D1D197A110087D11B /* EMI Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EMI Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBF81A01D197A110087D11B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACBF81A51D197A110087D11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACBF81A81D197A110087D11B /* EMI_Info.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EMI_Info.xcdatamodel; sourceTree = "<group>"; };
+		ACBF81AA1D197A110087D11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACBF81AD1D197A110087D11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACBF81AF1D197A110087D11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		ACBF81B41D197A110087D11B /* EMI InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EMI InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBF81BA1D197A110087D11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBF81BF1D197A110087D11B /* EMI InfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EMI InfoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBF81C51D197A110087D11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCCDE9A1D3BF1F600A10C58 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		ACCDFB751D2D93A100368D09 /* CreditCardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDetailViewController.swift; sourceTree = "<group>"; };
+		ACCE7DD01D221818004C839D /* EMITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMITableViewCell.swift; sourceTree = "<group>"; };
+		ACF6217E1D2FDD7300FC06BB /* StringLengthValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLengthValidatorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBF819A1D197A110087D11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF81B11D197A110087D11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF81BC1D197A110087D11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC10EFC51D2ECA9E00D5CD7E /* Input Validators */ = {
+			isa = PBXGroup;
+			children = (
+				AC10EFC61D2ECB7E00D5CD7E /* Validator.swift */,
+				AC7FDFFA1D308F39000C9C12 /* FailedValidationReason.swift */,
+				AC7FDFFC1D308F58000C9C12 /* ValidationResult.swift */,
+				AC7FDFFE1D308F83000C9C12 /* RequiredValidator.swift */,
+				AC7FE0001D308FA4000C9C12 /* StringLengthValidator.swift */,
+				AC8207791D30DCF400988153 /* DigitsValidator.swift */,
+				AC80BE5B1D30F058002B0169 /* IntegerValidator.swift */,
+				AC80BE5E1D30F117002B0169 /* DecimalValidator.swift */,
+				AC80BE601D30F14E002B0169 /* AlphaNumericDashValidator.swift */,
+				AC71C4461D31A53D00077332 /* ValidatorChain.swift */,
+				AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */,
+			);
+			name = "Input Validators";
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		AC3D7E021D22F0280022DF0E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D69261D19B43B00AA6985 /* SegueHandlerType.swift */,
+				AC8D69201D197E3F00AA6985 /* ManagedObjectContextSettable.swift */,
+				AC01DAB71D25955D004DB335 /* DataProvider.swift */,
+				AC01DABB1D2595BD004DB335 /* DataProviderDelegate.swift */,
+				AC1F40F61D2605C2005EA994 /* ConfigurableCell.swift */,
+				AC50CAC41D26B1B20074DB40 /* ConfiguredFetchResultProvider.swift */,
+				AC50CAC61D26B1F50074DB40 /* FetchedResutsControllerProvider.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AC3D7E031D22F03C0022DF0E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC20A3F61D2D5CA6005A6157 /* CreditCardColorViewController.swift */,
+				AC0AD07B1D1F8678003FFA71 /* EMIDetailViewController.swift */,
+				AC0AD0791D1F8368003FFA71 /* EMITableViewController.swift */,
+				AC8F486B1D2ABFB5007AE83F /* CreditCardCollectionViewController.swift */,
+				AC6F63271D2D57D400C09CAD /* CreditCardPageViewController.swift */,
+				ACCDFB751D2D93A100368D09 /* CreditCardDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC3D7E041D22F0580022DF0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D69241D199D2600AA6985 /* StringExtension.swift */,
+				AC7134BD1D327C8C007C2998 /* UIColorExtension.swift */,
+				ACA8C28B1D3A997400E90C10 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC3D7E051D22F05F0022DF0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC5D2EBA1D1C2271009EEF78 /* CreditCardTableViewCell.swift */,
+				ACCE7DD01D221818004C839D /* EMITableViewCell.swift */,
+				ACB714D41D29302600B2B6B2 /* CreditCardView.swift */,
+				AC8F486D1D2AC116007AE83F /* CreditCardCollectionViewCell.swift */,
+				ACA8C28D1D3AAA6100E90C10 /* CreditCardCollectionReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC3D7E061D22F0740022DF0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF81AA1D197A110087D11B /* Assets.xcassets */,
+				ACBF81A41D197A110087D11B /* Main.storyboard */,
+				ACBF81AC1D197A110087D11B /* LaunchScreen.storyboard */,
+				ACBF81AF1D197A110087D11B /* Info.plist */,
+				ACBF81A71D197A110087D11B /* EMI_Info.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC3D7E071D22F08D0022DF0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC2993541D2509A600C54851 /* FetchedResultsDataProvider.swift */,
+				AC3D7E001D22D0AC0022DF0E /* CreditCard+ConfiguredFetchResultProvider.swift */,
+				AC01DAB91D259590004DB335 /* DataProviderUpdate.swift */,
+				AC01DABD1D25965F004DB335 /* TableViewDataSource.swift */,
+				AC2EC3A81D280BBF00FA6895 /* EMI+CompletedMonths.swift */,
+				AC2EC3AD1D28230300FA6895 /* CreditCard+ActiveInstallments.swift */,
+				AC43EC181D2BED6600B51C37 /* CollectionViewDataSource.swift */,
+				AC8207D31D30EB4D00988153 /* EMI+FetchResultProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC7FDFF91D308F0E000C9C12 /* Validator Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC10EFC81D2ED4BB00D5CD7E /* RequiredValidatorTests.swift */,
+				ACF6217E1D2FDD7300FC06BB /* StringLengthValidatorTests.swift */,
+				AC8207771D30950400988153 /* DigitsValidatorTests.swift */,
+				AC80BE621D30F1A9002B0169 /* NameValidatorTests.swift */,
+				AC80BE651D30F1FD002B0169 /* IntegerValidatorTests.swift */,
+				AC80BE681D30F25E002B0169 /* DecimalValidatorTests.swift */,
+				AC71C44A1D31A90600077332 /* ValidatorChainTests.swift */,
+			);
+			name = "Validator Tests";
+			sourceTree = "<group>";
+		};
+		ACBF81941D197A110087D11B = {
+			isa = PBXGroup;
+			children = (
+				ACBF819F1D197A110087D11B /* EMI Info */,
+				ACBF81B71D197A110087D11B /* EMI InfoTests */,
+				ACBF81C21D197A110087D11B /* EMI InfoUITests */,
+				ACBF819E1D197A110087D11B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBF819E1D197A110087D11B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF819D1D197A110087D11B /* EMI Info.app */,
+				ACBF81B41D197A110087D11B /* EMI InfoTests.xctest */,
+				ACBF81BF1D197A110087D11B /* EMI InfoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBF819F1D197A110087D11B /* EMI Info */ = {
+			isa = PBXGroup;
+			children = (
+				ACCCDE951D3BF09200A10C58 /* Helpers */,
+				ACBF81A01D197A110087D11B /* AppDelegate.swift */,
+				AC10EFC51D2ECA9E00D5CD7E /* Input Validators */,
+				AC3D7E071D22F08D0022DF0E /* Models */,
+				AC3D7E061D22F0740022DF0E /* Resources */,
+				AC3D7E021D22F0280022DF0E /* Protocols */,
+				AC3D7E031D22F03C0022DF0E /* Controllers */,
+				AC3D7E041D22F0580022DF0E /* Extensions */,
+				AC3D7E051D22F05F0022DF0E /* Views */,
+			);
+			path = "EMI Info";
+			sourceTree = "<group>";
+		};
+		ACBF81B71D197A110087D11B /* EMI InfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF81BA1D197A110087D11B /* Info.plist */,
+				AC2EC3A31D28070E00FA6895 /* EMITests.swift */,
+				AC2EC3AB1D28226100FA6895 /* CreditCardTests.swift */,
+				AC7FDFF91D308F0E000C9C12 /* Validator Tests */,
+			);
+			path = "EMI InfoTests";
+			sourceTree = "<group>";
+		};
+		ACBF81C21D197A110087D11B /* EMI InfoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF81C51D197A110087D11B /* Info.plist */,
+			);
+			path = "EMI InfoUITests";
+			sourceTree = "<group>";
+		};
+		ACCCDE951D3BF09200A10C58 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC2EC3A11D2804FE00FA6895 /* CoreDataStack.swift */,
+				ACCCDE9A1D3BF1F600A10C58 /* Formatters.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBF819C1D197A110087D11B /* EMI Info */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBF81C81D197A110087D11B /* Build configuration list for PBXNativeTarget "EMI Info" */;
+			buildPhases = (
+				ACBF81991D197A110087D11B /* Sources */,
+				ACBF819A1D197A110087D11B /* Frameworks */,
+				ACBF819B1D197A110087D11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EMI Info";
+			productName = "EMI Info";
+			productReference = ACBF819D1D197A110087D11B /* EMI Info.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACBF81B31D197A110087D11B /* EMI InfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBF81CB1D197A110087D11B /* Build configuration list for PBXNativeTarget "EMI InfoTests" */;
+			buildPhases = (
+				ACBF81B01D197A110087D11B /* Sources */,
+				ACBF81B11D197A110087D11B /* Frameworks */,
+				ACBF81B21D197A110087D11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBF81B61D197A110087D11B /* PBXTargetDependency */,
+			);
+			name = "EMI InfoTests";
+			productName = "EMI InfoTests";
+			productReference = ACBF81B41D197A110087D11B /* EMI InfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACBF81BE1D197A110087D11B /* EMI InfoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBF81CE1D197A110087D11B /* Build configuration list for PBXNativeTarget "EMI InfoUITests" */;
+			buildPhases = (
+				ACBF81BB1D197A110087D11B /* Sources */,
+				ACBF81BC1D197A110087D11B /* Frameworks */,
+				ACBF81BD1D197A110087D11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBF81C11D197A110087D11B /* PBXTargetDependency */,
+			);
+			name = "EMI InfoUITests";
+			productName = "EMI InfoUITests";
+			productReference = ACBF81BF1D197A110087D11B /* EMI InfoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBF81951D197A110087D11B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Kivi;
+				TargetAttributes = {
+					ACBF819C1D197A110087D11B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 35M88484KX;
+						DevelopmentTeamName = "Vikram Raj Gopinathan";
+						ProvisioningStyle = Automatic;
+					};
+					ACBF81B31D197A110087D11B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 35M88484KX;
+						DevelopmentTeamName = "Vikram Raj Gopinathan";
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACBF819C1D197A110087D11B;
+					};
+					ACBF81BE1D197A110087D11B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 35M88484KX;
+						DevelopmentTeamName = "Vikram Raj Gopinathan";
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACBF819C1D197A110087D11B;
+					};
+				};
+			};
+			buildConfigurationList = ACBF81981D197A110087D11B /* Build configuration list for PBXProject "EMI Info" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACBF81941D197A110087D11B;
+			productRefGroup = ACBF819E1D197A110087D11B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBF819C1D197A110087D11B /* EMI Info */,
+				ACBF81B31D197A110087D11B /* EMI InfoTests */,
+				ACBF81BE1D197A110087D11B /* EMI InfoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBF819B1D197A110087D11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBF81AE1D197A110087D11B /* LaunchScreen.storyboard in Resources */,
+				ACBF81AB1D197A110087D11B /* Assets.xcassets in Resources */,
+				ACBF81A61D197A110087D11B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF81B21D197A110087D11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF81BD1D197A110087D11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBF81991D197A110087D11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC2EC3AE1D28230300FA6895 /* CreditCard+ActiveInstallments.swift in Sources */,
+				AC20A3F71D2D5CA6005A6157 /* CreditCardColorViewController.swift in Sources */,
+				ACCCDE9B1D3BF1F600A10C58 /* Formatters.swift in Sources */,
+				AC01DABE1D25965F004DB335 /* TableViewDataSource.swift in Sources */,
+				AC5D2EBB1D1C2271009EEF78 /* CreditCardTableViewCell.swift in Sources */,
+				ACB714D51D29302600B2B6B2 /* CreditCardView.swift in Sources */,
+				AC82077A1D30DCF400988153 /* DigitsValidator.swift in Sources */,
+				ACA8C28E1D3AAA6100E90C10 /* CreditCardCollectionReusableView.swift in Sources */,
+				AC7FE0011D308FA4000C9C12 /* StringLengthValidator.swift in Sources */,
+				AC0AD07C1D1F8678003FFA71 /* EMIDetailViewController.swift in Sources */,
+				AC6F63281D2D57D400C09CAD /* CreditCardPageViewController.swift in Sources */,
+				AC8F486C1D2ABFB5007AE83F /* CreditCardCollectionViewController.swift in Sources */,
+				AC2993551D2509A600C54851 /* FetchedResultsDataProvider.swift in Sources */,
+				AC80BE5F1D30F117002B0169 /* DecimalValidator.swift in Sources */,
+				AC50CAC51D26B1B20074DB40 /* ConfiguredFetchResultProvider.swift in Sources */,
+				AC7FDFFF1D308F83000C9C12 /* RequiredValidator.swift in Sources */,
+				AC2EC3A91D280BBF00FA6895 /* EMI+CompletedMonths.swift in Sources */,
+				AC01DABA1D259590004DB335 /* DataProviderUpdate.swift in Sources */,
+				ACBF81A91D197A110087D11B /* EMI_Info.xcdatamodeld in Sources */,
+				AC50CAC71D26B1F50074DB40 /* FetchedResutsControllerProvider.swift in Sources */,
+				ACA8C28C1D3A997400E90C10 /* UIViewExtension.swift in Sources */,
+				AC80BE5C1D30F058002B0169 /* IntegerValidator.swift in Sources */,
+				AC7134BE1D327C8C007C2998 /* UIColorExtension.swift in Sources */,
+				AC01DABC1D2595BD004DB335 /* DataProviderDelegate.swift in Sources */,
+				ACBF81A11D197A110087D11B /* AppDelegate.swift in Sources */,
+				AC10EFC71D2ECB7E00D5CD7E /* Validator.swift in Sources */,
+				ACCE7DD11D221818004C839D /* EMITableViewCell.swift in Sources */,
+				AC3D7E011D22D0AC0022DF0E /* CreditCard+ConfiguredFetchResultProvider.swift in Sources */,
+				AC8D69251D199D2600AA6985 /* StringExtension.swift in Sources */,
+				AC8F486E1D2AC116007AE83F /* CreditCardCollectionViewCell.swift in Sources */,
+				AC8D69211D197E3F00AA6985 /* ManagedObjectContextSettable.swift in Sources */,
+				AC7FDFFD1D308F58000C9C12 /* ValidationResult.swift in Sources */,
+				AC71C4471D31A53D00077332 /* ValidatorChain.swift in Sources */,
+				AC80BE611D30F14E002B0169 /* AlphaNumericDashValidator.swift in Sources */,
+				AC2EC3A21D2804FE00FA6895 /* CoreDataStack.swift in Sources */,
+				AC7134BC1D3227F3007C2998 /* ValidatableTextField.swift in Sources */,
+				AC01DAB81D25955D004DB335 /* DataProvider.swift in Sources */,
+				AC8D69271D19B43B00AA6985 /* SegueHandlerType.swift in Sources */,
+				AC0AD07A1D1F8368003FFA71 /* EMITableViewController.swift in Sources */,
+				AC7FDFFB1D308F39000C9C12 /* FailedValidationReason.swift in Sources */,
+				AC8207D41D30EB4D00988153 /* EMI+FetchResultProvider.swift in Sources */,
+				AC1F40F71D2605C2005EA994 /* ConfigurableCell.swift in Sources */,
+				AC43EC191D2BED6600B51C37 /* CollectionViewDataSource.swift in Sources */,
+				ACCDFB761D2D93A100368D09 /* CreditCardDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF81B01D197A110087D11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC71C44B1D31A90600077332 /* ValidatorChainTests.swift in Sources */,
+				AC7FE0081D309042000C9C12 /* ValidationResult.swift in Sources */,
+				AC7FE0091D309042000C9C12 /* RequiredValidator.swift in Sources */,
+				AC80BE671D30F203002B0169 /* DecimalValidator.swift in Sources */,
+				AC2EC3AF1D28362E00FA6895 /* CreditCard+ActiveInstallments.swift in Sources */,
+				AC7FE0061D309042000C9C12 /* Validator.swift in Sources */,
+				AC2EC3AA1D280BCB00FA6895 /* EMI+CompletedMonths.swift in Sources */,
+				AC80BE631D30F1A9002B0169 /* NameValidatorTests.swift in Sources */,
+				AC80BE5D1D30F0FE002B0169 /* IntegerValidator.swift in Sources */,
+				AC10EFC91D2ED4BB00D5CD7E /* RequiredValidatorTests.swift in Sources */,
+				AC7FE00A1D309042000C9C12 /* StringLengthValidator.swift in Sources */,
+				AC80BE661D30F1FD002B0169 /* IntegerValidatorTests.swift in Sources */,
+				AC80BE691D30F25E002B0169 /* DecimalValidatorTests.swift in Sources */,
+				AC2EC3A51D28072400FA6895 /* EMI_Info.xcdatamodeld in Sources */,
+				ACF6217F1D2FDD7300FC06BB /* StringLengthValidatorTests.swift in Sources */,
+				AC80BE641D30F1C1002B0169 /* AlphaNumericDashValidator.swift in Sources */,
+				AC71C44C1D31A90C00077332 /* ValidatorChain.swift in Sources */,
+				AC2EC3A41D28070E00FA6895 /* EMITests.swift in Sources */,
+				AC8207781D30950400988153 /* DigitsValidatorTests.swift in Sources */,
+				AC2EC3AC1D28226100FA6895 /* CreditCardTests.swift in Sources */,
+				AC2EC3A61D28072C00FA6895 /* CoreDataStack.swift in Sources */,
+				AC7FE0071D309042000C9C12 /* FailedValidationReason.swift in Sources */,
+				AC82077B1D30DCF400988153 /* DigitsValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF81BB1D197A110087D11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBF81B61D197A110087D11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBF819C1D197A110087D11B /* EMI Info */;
+			targetProxy = ACBF81B51D197A110087D11B /* PBXContainerItemProxy */;
+		};
+		ACBF81C11D197A110087D11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBF819C1D197A110087D11B /* EMI Info */;
+			targetProxy = ACBF81C01D197A110087D11B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACBF81A41D197A110087D11B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBF81A51D197A110087D11B /* Base */,
+			);
+			name = Main.storyboard;
+			path = "/Users/Vikram/Desktop/Projects/EMI Info/EMI Info";
+			sourceTree = "<absolute>";
+		};
+		ACBF81AC1D197A110087D11B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBF81AD1D197A110087D11B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACBF81C61D197A110087D11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACBF81C71D197A110087D11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACBF81C91D197A110087D11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "EMI Info/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kivi.EMI-Info";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ACBF81CA1D197A110087D11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "EMI Info/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kivi.EMI-Info";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ACBF81CC1D197A110087D11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EMI InfoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kivi.EMI-InfoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMI Info.app/EMI Info";
+			};
+			name = Debug;
+		};
+		ACBF81CD1D197A110087D11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EMI InfoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kivi.EMI-InfoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMI Info.app/EMI Info";
+			};
+			name = Release;
+		};
+		ACBF81CF1D197A110087D11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EMI InfoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kivi.EMI-InfoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "EMI Info";
+			};
+			name = Debug;
+		};
+		ACBF81D01D197A110087D11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EMI InfoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kivi.EMI-InfoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "EMI Info";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBF81981D197A110087D11B /* Build configuration list for PBXProject "EMI Info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBF81C61D197A110087D11B /* Debug */,
+				ACBF81C71D197A110087D11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBF81C81D197A110087D11B /* Build configuration list for PBXNativeTarget "EMI Info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBF81C91D197A110087D11B /* Debug */,
+				ACBF81CA1D197A110087D11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBF81CB1D197A110087D11B /* Build configuration list for PBXNativeTarget "EMI InfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBF81CC1D197A110087D11B /* Debug */,
+				ACBF81CD1D197A110087D11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBF81CE1D197A110087D11B /* Build configuration list for PBXNativeTarget "EMI InfoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBF81CF1D197A110087D11B /* Debug */,
+				ACBF81D01D197A110087D11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACBF81A71D197A110087D11B /* EMI_Info.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACBF81A81D197A110087D11B /* EMI_Info.xcdatamodel */,
+			);
+			currentVersion = ACBF81A81D197A110087D11B /* EMI_Info.xcdatamodel */;
+			path = EMI_Info.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ACBF81951D197A110087D11B /* Project object */;
+}

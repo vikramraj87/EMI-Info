@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11185.3" systemVersion="15F34" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CreditCard" representedClassName="CreditCard" syncable="YES" codeGenerationType="class">
+        <attribute name="billDay" attributeType="Integer 16" minValueString="1" maxValueString="31" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="color" attributeType="Transformable" syncable="YES"/>
+        <attribute name="issuingBank" attributeType="String" syncable="YES"/>
+        <attribute name="lastFourNumbers" attributeType="Integer 16" minValueString="0" maxValueString="9999" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="emis" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="EMI" inverseName="creditCard" inverseEntity="EMI" syncable="YES"/>
+    </entity>
+    <entity name="EMI" representedClassName="EMI" syncable="YES" codeGenerationType="class">
+        <attribute name="monthlyInstallment" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfInstallments" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="creditCard" maxCount="1" deletionRule="Nullify" destinationEntity="CreditCard" inverseName="emis" inverseEntity="CreditCard" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CreditCard" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="EMI" positionX="-63" positionY="9" width="128" height="120"/>
+    </elements>
+</model>
