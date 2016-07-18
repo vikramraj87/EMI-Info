@@ -35,7 +35,8 @@
 		AC7134BC1D3227F3007C2998 /* ValidatableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */; };
 		AC7134BE1D327C8C007C2998 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7134BD1D327C8C007C2998 /* UIColorExtension.swift */; };
 		AC71C44B1D31A90600077332 /* ValidatorChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71C44A1D31A90600077332 /* ValidatorChainTests.swift */; };
-		AC7DDCEB1D3CC1FE005B0A39 /* ValidationKitiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7DDCEA1D3CC1FE005B0A39 /* ValidationKitiOS.framework */; };
+		AC7DDCEC1D3CC3A8005B0A39 /* ValidationKitiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7DDCEA1D3CC1FE005B0A39 /* ValidationKitiOS.framework */; };
+		AC7DDCED1D3CC3A8005B0A39 /* ValidationKitiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC7DDCEA1D3CC1FE005B0A39 /* ValidationKitiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC80BE631D30F1A9002B0169 /* NameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE621D30F1A9002B0169 /* NameValidatorTests.swift */; };
 		AC80BE661D30F1FD002B0169 /* IntegerValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE651D30F1FD002B0169 /* IntegerValidatorTests.swift */; };
 		AC80BE691D30F25E002B0169 /* DecimalValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BE681D30F25E002B0169 /* DecimalValidatorTests.swift */; };
@@ -77,6 +78,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC7DDCEE1D3CC3A8005B0A39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC7DDCED1D3CC3A8005B0A39 /* ValidationKitiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AC01DAB71D25955D004DB335 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		AC01DAB91D259590004DB335 /* DataProviderUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderUpdate.swift; sourceTree = "<group>"; };
@@ -99,7 +114,7 @@
 		AC50CAC61D26B1F50074DB40 /* FetchedResutsControllerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResutsControllerProvider.swift; sourceTree = "<group>"; };
 		AC5D2EBA1D1C2271009EEF78 /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
 		AC6F63271D2D57D400C09CAD /* CreditCardPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardPageViewController.swift; sourceTree = "<group>"; };
-		AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatableTextField.swift; sourceTree = "<group>"; };
+		AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidatableTextField.swift; path = ../Validators/ValidatableTextField.swift; sourceTree = "<group>"; };
 		AC7134BD1D327C8C007C2998 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		AC71C44A1D31A90600077332 /* ValidatorChainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorChainTests.swift; sourceTree = "<group>"; };
 		AC7DDCEA1D3CC1FE005B0A39 /* ValidationKitiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ValidationKitiOS.framework; sourceTree = "<group>"; };
@@ -138,7 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC7DDCEB1D3CC1FE005B0A39 /* ValidationKitiOS.framework in Frameworks */,
+				AC7DDCEC1D3CC3A8005B0A39 /* ValidationKitiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,15 +174,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC10EFC51D2ECA9E00D5CD7E /* Input Validators */ = {
-			isa = PBXGroup;
-			children = (
-				AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */,
-			);
-			name = "Input Validators";
-			path = Validators;
-			sourceTree = "<group>";
-		};
 		AC3D7E021D22F0280022DF0E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +184,7 @@
 				AC1F40F61D2605C2005EA994 /* ConfigurableCell.swift */,
 				AC50CAC41D26B1B20074DB40 /* ConfiguredFetchResultProvider.swift */,
 				AC50CAC61D26B1F50074DB40 /* FetchedResutsControllerProvider.swift */,
+				AC7134BB1D3227F3007C2998 /* ValidatableTextField.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -284,7 +291,6 @@
 			children = (
 				ACCCDE951D3BF09200A10C58 /* Helpers */,
 				ACBF81A01D197A110087D11B /* AppDelegate.swift */,
-				AC10EFC51D2ECA9E00D5CD7E /* Input Validators */,
 				AC3D7E071D22F08D0022DF0E /* Models */,
 				AC3D7E061D22F0740022DF0E /* Resources */,
 				AC3D7E021D22F0280022DF0E /* Protocols */,
@@ -333,6 +339,7 @@
 				ACBF81991D197A110087D11B /* Sources */,
 				ACBF819A1D197A110087D11B /* Frameworks */,
 				ACBF819B1D197A110087D11B /* Resources */,
+				AC7DDCEE1D3CC3A8005B0A39 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
